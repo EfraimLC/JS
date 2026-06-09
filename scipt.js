@@ -300,27 +300,55 @@
 // alert(num + "! = " + fat);
 // EX1
 let i;
-for( i = 1; i <= 10; i++){
-    alert(i);
+for (i = 1; i <= 10; i++) {
+  alert(i);
 }
 // EX2
 let p;
 let soma = 0;
-for(p = 1; p <= 100; p++){
-    soma = soma + p;
+for (p = 1; p <= 100; p++) {
+  soma = soma + p;
 }
 alert(soma);
 // EX3
-const nomes = ["Ana", "Carlos", "Maria", "Pedro"];
+const nomes = ["Ana", "Carlos", "João", "Maria", "Pedro"];
 
 for (let i = 0; i < nomes.length; i++) {
-    alert(nomes[i]);
+  alert(nomes[i]);
 }
 // EX4
-let num = [12345, 234567, 67, -35447, 43];
+let num = [-12345, 234562, 67, -35447, 40];
 let q;
-for(q = 0; q < num.length; q++){
-    if(num[q]%2==1){
-        alert(num[q])
-    }
+for (q = 0; q < num.length; q++) {
+  if (num[q] % 2 == 1 || num[q] % 2 == -1) {
+    alert(num[q]);
+  }
 }
+// EX5
+let number = [
+  -12345, 234562, 67, -35447, 40, -34234927312, -345674, 69273910, -6767676,
+  67676,
+];
+let x;
+for (x = 0; x < number.length; x++) {
+  if (number[x] % 2 == 0) {
+    alert(number[x]);
+  }
+}
+// EX6
+let numero = [-723464745346, -23457, 34567899, 2394232420, 1023749534512];
+let menor = numero[0];
+for (let m = 0; m < numero.length; m++) {
+  if (numero[m] < menor) {
+    menor = numero[m];
+  }
+}
+alert("Menor número é: " + menor);
+// FATORAÇÃO!!!!!!!!!!!!!!!!
+const n = +prompt("Digite um número");
+let z;
+let fat = 1;
+for (z = 1; z <= n; z++) {
+  fat = fat * z;
+}
+alert(n+ "! = " + fat);
