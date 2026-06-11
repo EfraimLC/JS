@@ -414,3 +414,21 @@ for (let u = 0; u < notas.length; u++) {
 media = soma / notas.length;
 alert("Soma de todas as notas: " + soma);
 alert("Média final das notas: " + media.toFixed(2));
+// EXTRA!!!!!!!!!!!!!!!!!!!!!!!
+let alu = [
+  "Helena",
+  "Alice",
+  "Laura",
+  "Maitê",
+  "Aurora",
+  "Ravi",
+  "Miguel",
+  "Arthur",
+  "Heitor",
+  "Theo",
+];
+let numeroDoAluno = 0;
+for (let a = 0; a < alu.length; a++) {
+  numeroDoAluno = numeroDoAluno + 1;
+  alert('Aluno: '  + alu[a]+ ' ' + numeroDoAluno + ' Posição: ' + a);
+}
