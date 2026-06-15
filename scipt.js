@@ -471,5 +471,5 @@ const catalogo = {
 catalogo.filmes.forEach((film) => console.log(film));
 
 catalogo.filmes.pop();
-const captain = catalogo.filmes.push('Capitão América');
-captain.forEach((film) => console.log(film));
+catalogo.filmes.push('Capitão América');
+catalogo.filmes.map((film) => console.log(film));
