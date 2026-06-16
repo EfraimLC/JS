@@ -486,19 +486,24 @@ const CALCULADORA = (botao) => {
   const mult = Number(numA.value) * Number(numB.value);
   const divisao = Number(numA.value) / Number(numB.value);
 
-  if (botao.id === "soma") {
-    alert(soma);
-  }
-  if (botao.id === "sub") {
-    alert(subt);
-  }
-  if (botao.id === "mult") {
-    alert(mult);
-  }
   if (botao.id === "divs") {
-    alert(divisao);
+    switch (Number(numB.value)) {
+      case 0:
+        alert("Erro. Digite outro número diferente de 0");
+    }
   }
-  if(numA / 0){
-    alert('Erro. Digite números diferentes de 0')
+  switch (botao.id) {
+    case "soma":
+      alert(soma);
+      break;
+    case "sub":
+      alert(subt);
+      break;
+    case "mult":
+      alert(mult);
+      break;
+    case "divs":
+      alert(divisao);
+      break;
   }
 };
