@@ -498,4 +498,7 @@ const CALCULADORA = (botao) => {
   if (botao.id === "divs") {
     alert(divisao);
   }
+  if(numA / 0){
+    alert('Erro. Digite números diferentes de 0')
+  }
 };
